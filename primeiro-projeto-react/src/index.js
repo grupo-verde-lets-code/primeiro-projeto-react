@@ -3,6 +3,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ProdutoProvider from './contexts/Produtos';
 
 import { Register } from './pages/Register';
 
@@ -10,11 +11,13 @@ const root = createRoot(document.getElementById('root'))
 
 root.render(  
   <BrowserRouter>
-    <Routes>
+    <ProdutoProvider>
+      <Routes>
 
-      <Route path="/registrar" element={<Register/>}/>
+        <Route path="/registrar" element={<Register/>}/>
 
-    </Routes>
+      </Routes>
+    </ProdutoProvider>
   </BrowserRouter>
 );
 
