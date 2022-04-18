@@ -23,7 +23,7 @@ export const DefaultTemplate = (props) => {
       <main className="content-wrap">{props.children}</main>
 
       <footer className="footer">
-        <h1>Projeto E-Commerce Squad Verde</h1>
+        <h2>Projeto E-Commerce React - Squad Verde</h2>
       </footer>
     </>
   );
