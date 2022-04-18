@@ -20,9 +20,11 @@ export const DefaultTemplate = (props) => {
         </Container>
       </Navbar>
 
-      <main>{props.children}</main>
+      <main className="content-wrap">{props.children}</main>
 
-      <footer></footer>
+      <footer className="footer">
+        <h1>Projeto E-Commerce Squad Verde</h1>
+      </footer>
     </>
   );
 };
