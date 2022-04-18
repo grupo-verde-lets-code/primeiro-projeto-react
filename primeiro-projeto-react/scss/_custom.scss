@@ -1,0 +1,30 @@
+// Custom.scss
+
+//Other imports
+@import "../src/Variables/colors.scss";
+
+// Functions
+@import "../node_modules/bootstrap/scss/functions";
+
+// Deafult variable overrides
+$body-bg: $bg_light;
+$body-color: #111;
+
+$theme-colors: (
+  "primary": $accent,
+  "danger": #ff4136
+);
+
+// Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Bootstrap components
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+
+// Additional custom code
