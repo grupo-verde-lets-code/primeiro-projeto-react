@@ -11,7 +11,7 @@ html {
   overflow: auto;
 }
 *{
-  font-size: 2rem;
+  font-size: 1.5rem;
 
   padding: 0;
   margin: 0;
@@ -37,22 +37,50 @@ code {
   filter: drop-shadow(0 0 1rem $shadow-dark);
 }
 .navbar-brand {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+
+  padding: 0.5rem 0;
+}
+.navbar-link {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 /* FORMS */
 form {
   margin: 2rem 0;
 }
-form .mb-3 {
-  margin: 1rem 0;
+.form-group {
+  margin: 2rem 0;
 }
-form .form-control {
+.form-label {
   font-size: 1.5rem;
+  font-weight: 600;
+}
+.form-control {
+  font-size: 1.2rem;
   border: 0;
   margin: 0.5rem 0;
+  padding: 1rem;
 
   background-color: $bg_light;
   border-radius: 0.6rem;
-  filter: drop-shadow(0.2rem 0.2rem 0.6rem $shadow-dark) drop-shadow(-0.3rem -0.3rem 0.6rem $shadow-light);
+  filter: drop-shadow(0 0.2rem 0.4rem $shadow-dark);
+}
+
+/* BUTTONS */
+
+.submit-button {
+  font-size: 1.8rem;
+  border: 0;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+
+  background-color: $accent;
+  border-radius: 0.6rem;
+  filter: drop-shadow(0 0.2rem 0.4rem $shadow-dark);
+}
+.submit-button:hover {
+  background-color: $accent_dark;
 }

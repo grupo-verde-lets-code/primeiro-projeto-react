@@ -29,7 +29,7 @@
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 17, 17, 17;
-  --bs-body-bg-rgb: 212, 212, 212;
+  --bs-body-bg-rgb: 229, 229, 229;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -38,7 +38,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #111;
-  --bs-body-bg: #d4d4d4;
+  --bs-body-bg: #e5e5e5;
 }
 
 *,
@@ -599,7 +599,7 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #d4d4d4;
+  background-color: #e5e5e5;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -2005,7 +2005,7 @@ html {
 }
 
 * {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -2031,7 +2031,14 @@ code {
 }
 
 .navbar-brand {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+
+.navbar-link {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 /* FORMS */
@@ -2039,17 +2046,39 @@ form {
   margin: 2rem 0;
 }
 
-form .mb-3 {
-  margin: 1rem 0;
+.form-group {
+  margin: 2rem 0;
 }
 
-form .form-control {
+.form-label {
   font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.form-control {
+  font-size: 1.2rem;
   border: 0;
   margin: 0.5rem 0;
-  background-color: #d4d4d4;
+  padding: 1rem;
+  background-color: #e5e5e5;
   border-radius: 0.6rem;
-  -webkit-filter: drop-shadow(0.2rem 0.2rem 0.6rem #a1a1a1) drop-shadow(-0.3rem -0.3rem 0.6rem #ffffff);
-          filter: drop-shadow(0.2rem 0.2rem 0.6rem #a1a1a1) drop-shadow(-0.3rem -0.3rem 0.6rem #ffffff);
+  -webkit-filter: drop-shadow(0 0.2rem 0.4rem #a1a1a1);
+          filter: drop-shadow(0 0.2rem 0.4rem #a1a1a1);
+}
+
+/* BUTTONS */
+.submit-button {
+  font-size: 1.8rem;
+  border: 0;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  background-color: #40C970;
+  border-radius: 0.6rem;
+  -webkit-filter: drop-shadow(0 0.2rem 0.4rem #a1a1a1);
+          filter: drop-shadow(0 0.2rem 0.4rem #a1a1a1);
+}
+
+.submit-button:hover {
+  background-color: #1EC258;
 }
 /*# sourceMappingURL=main.css.map */
