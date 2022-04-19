@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Navbar, Nav } from "react-bootstrap";
+import { Container, Navbar, Nav } from "react-bootstrap";
 
 export const DefaultTemplate = (props) => {
   return (

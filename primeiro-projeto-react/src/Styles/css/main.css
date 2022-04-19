@@ -35,7 +35,7 @@ IMPORTS
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 17, 17, 17;
-  --bs-body-bg-rgb: 229, 229, 229;
+  --bs-body-bg-rgb: 241, 241, 241;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -44,7 +44,7 @@ IMPORTS
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #111;
-  --bs-body-bg: #e5e5e5;
+  --bs-body-bg: #f1f1f1;
 }
 
 *,
@@ -605,7 +605,7 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #e5e5e5;
+  background-color: #f1f1f1;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -2075,6 +2075,15 @@ NAVBAR
 .navbar-link {
   font-size: 1.5rem;
   font-weight: 600;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.navbar-link:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 /*
@@ -2103,9 +2112,18 @@ form {
   margin: 0.5rem 0;
   padding: 1rem;
   border-radius: 0.6rem;
-  background-color: #e5e5e5;
-  -webkit-filter: drop-shadow(0 0.2rem 0.4rem #a1a1a1);
-          filter: drop-shadow(0 0.2rem 0.4rem #a1a1a1);
+  background-color: #f1f1f1;
+  -webkit-filter: drop-shadow(0 0.3rem 0.4rem #a1a1a1);
+          filter: drop-shadow(0 0.3rem 0.4rem #a1a1a1);
+}
+
+.input-addon {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 0 1.5rem;
+  background-color: #f1f1f1;
+  border: 0;
 }
 
 .submit-button {
@@ -2117,9 +2135,15 @@ form {
   background-color: #40C970;
   -webkit-filter: drop-shadow(0 0.2rem 0.4rem #a1a1a1);
           filter: drop-shadow(0 0.2rem 0.4rem #a1a1a1);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .submit-button:hover {
   background-color: #1EC258;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 /*# sourceMappingURL=main.css.map */

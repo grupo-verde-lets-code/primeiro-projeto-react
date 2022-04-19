@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { DefaultTemplate } from "./pages/_templates/Default";
 
 import { Register } from "./pages/Register";
-import App from "./pages/App";
+import {Home} from "./pages/Home";
 
 const root = createRoot(document.getElementById("root"));
 
@@ -14,7 +14,7 @@ root.render(
   <BrowserRouter>
     <DefaultTemplate>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Home />} />
         <Route path="/registrar" element={<Register />} />
       </Routes>
     </DefaultTemplate>

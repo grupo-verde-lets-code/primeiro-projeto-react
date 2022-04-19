@@ -1,7 +1,5 @@
 import React from "react";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
+import { Container, Form, Button, InputGroup, FormControl } from "react-bootstrap";
 
 import "../../Styles/css/Register.css";
 
@@ -16,15 +14,26 @@ const Register = () => {
           </Form.Group>
           <Form.Group className="mb-3 form-group" controlId="formBasicPrice">
             <Form.Label className="form-label">Preço</Form.Label>
-            <Form.Control className="form-control" placeholder="Digite o Preço" />
+            <InputGroup>
+            <InputGroup.Text className="form-control input-addon">R$</InputGroup.Text>
+            <FormControl className="form-control" placeholder="Digite o Preço" />
+            </InputGroup>
           </Form.Group>
           <Form.Group className="mb-3 form-group" controlId="formBasicInfos">
             <Form.Label className="form-label">Informações/Descrição</Form.Label>
-            <Form.Control className="form-control" as="textarea" rows={5} placeholder="Descreva seu produto"></Form.Control>
+            <Form.Control
+              className="form-control"
+              as="textarea"
+              rows={5}
+              placeholder="Descreva seu produto"
+            ></Form.Control>
           </Form.Group>
-          <Form.Group classname="mb-3 form-group" controlId="formBasicWeight">
+          <Form.Group className="mb-3 form-group" controlId="formBasicWeight">
             <Form.Label className="form-label">Peso</Form.Label>
+            <InputGroup>
             <Form.Control className="form-control" placeholder="Digite o peso"></Form.Control>
+            <InputGroup.Text className="form-control input-addon">Kg</InputGroup.Text>
+            </InputGroup>
           </Form.Group>
           <Form.Group controlId="formFile" className="mb-3 form-group">
             <Form.Label className="form-label">Imagem do produto</Form.Label>
