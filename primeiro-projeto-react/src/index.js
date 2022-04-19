@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 import "./Styles/css/main.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { DefaultTemplate } from "./pages/_templates/Default";
+import ProdutoProvider from './contexts/Produtos';
 
 import { Register } from "./pages/Register";
 import App from "./pages/App";
@@ -12,12 +13,14 @@ const root = createRoot(document.getElementById("root"));
 
 root.render(
   <BrowserRouter>
-    <DefaultTemplate>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/registrar" element={<Register />} />
-      </Routes>
-    </DefaultTemplate>
+    <ProdutoProvider>
+      <DefaultTemplate>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/registrar" element={<Register />} />
+        </Routes>
+      </DefaultTemplate>
+    </ProdutoProvider>
   </BrowserRouter>
 );
 
